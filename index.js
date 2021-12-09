@@ -11,31 +11,34 @@ function ternaryCheckCity(city){
   return (city === 'NYC') ? "Ok, sounds good." : "No go.";
 }
 
-function switchOnCharmFromTip(tip){
-  switch(tip) {
-    case "generous"
-      response = 'Thank you so much.'
-      break;
-    case 'not as generous'
-      response = 'Thank you.'
-      break;
-    case 'thanks for everything'
-      response = 'Bye.'
-      break;
-  return response
-  }
-}
-
-  // function switchOnCharmFromTip(tip){
-  //   switch(tip) {
-  //     case "generous"
-  //       return 'Thank you so much.'
-
-  //     case 'not as generous'
-  //       return 'Thank you.'
-
-  //     case 'thanks for everything'
-  //       return 'Bye.'
-
-  //   }
+// I want to know why I can't do it this way...
+// function switchOnCharmFromTip(tip){
+//   String response = ""
+//   switch(tip) {
+//     case "generous"
+//       response = 'Thank you so much.'
+//       break;
+//     case 'not as generous'
+//       response = 'Thank you.'
+//       break;
+//     case 'thanks for everything'
+//       response = 'Bye.'
+//       break;
   
+//   }
+//   return response;
+// }
+
+function switchOnCharmFromTip(tip){
+    switch(tip) {
+      case "generous":
+        return 'Thank you so much.'
+
+      case 'not as generous':
+        return 'Thank you.'
+
+      case 'thanks for everything':
+        return 'Bye.'
+
+    }
+}
